@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: ibmawwal/ticketing-client
+          image: ibmawwal/client
 ---
 apiVersion: v1
 kind: Service
