@@ -25,7 +25,11 @@ router.post(
       .not()
       .isEmpty()
       .custom((input: string) => mongoose.Types.ObjectId.isValid(input))
-      .withMessage('TicketId must be provided.'),
+<<<<<<< HEAD
+      .withMessage('TicketId must be provided'),
+=======
+      .withMessage('TicketId must be provided'),
+>>>>>>> 4d3a97ac2e37c9220303c5f194ff837d6aad286e
   ],
   validateRequest,
   async (req: Request, res: Response) => {
@@ -40,7 +44,11 @@ router.post(
     // Make sure that this ticket is not already reserved
     const isReserved = await ticket.isReserved();
     if (isReserved) {
+<<<<<<< HEAD
       throw new BadRequestError('Ticket is already reserved');
+=======
+      throw new BadRequestError('Ticket is already reserved');
+>>>>>>> 4d3a97ac2e37c9220303c5f194ff837d6aad286e
     }
 
     // Calculate an expiration date for this order

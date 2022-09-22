@@ -11,7 +11,11 @@ router.post(
   '/api/tickets',
   requireAuth,
   [
+<<<<<<< HEAD
     body('title').not().isEmpty().withMessage('Title is required.'),
+=======
+    body('title').not().isEmpty().withMessage('Title is required.'),
+>>>>>>> 4d3a97ac2e37c9220303c5f194ff837d6aad286e
     body('price')
       .isFloat({ gt: 0 })
       .withMessage('Price must be greater than 0'),
