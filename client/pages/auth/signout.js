@@ -14,7 +14,7 @@ const Signout = () => {
     doRequest();
   }, []);
 
-  return <div>Signing you out.....</div>;
+  return <div>Signing you out...</div>;
 };
 
 export default Signout;
