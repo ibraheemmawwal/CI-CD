@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tickets
-          image: cygnetops/tickets
+          image: ibmawwal/tickets
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
